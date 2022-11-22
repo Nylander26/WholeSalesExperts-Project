@@ -1,0 +1,91 @@
+:root {
+    --transition: all 0.7s ease
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    color: aliceblue;
+}
+
+.togglemenu {
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    left: 2%;
+    top: 2%;
+}
+
+.closenav {
+    height: 30%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #c0ce2a;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.opennav {
+    height: 30%;
+    width: 14em;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #c0ce2a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    transition: var(--transition);
+    border-radius: 0em 0em 2em;
+}
+
+.opennav a {
+    padding: 0.5em 0.5em 0.5em 2.5em;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0d0d0d;
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.closenav button, a {
+    display: none;
+}
+
+.togglemenu:hover {
+    color: #c0ce2a
+}
+
+.opennav a:hover {
+    color: #e31313;
+}
+
+.opennav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background: border-box;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar {
+    background: border-box;
+    height: 4.4em;
+}
+
+@media screen and (max-height: 450px) {
+    .opennav {
+        padding-top: 1em;
+    }
+
+    .opennav a {
+        font-size: 1.1em;
+    }
+}

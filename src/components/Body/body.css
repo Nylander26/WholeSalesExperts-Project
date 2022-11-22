@@ -1,0 +1,88 @@
+.logo{
+    width: 24em;
+    height: 22em;
+    position: absolute;
+    top: 0;
+    left: 9%;
+}
+
+.image-slider {
+    width: 100%;
+    position: absolute;
+    top: 36%;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    text-align: center;
+    background: rgba(105, 105, 105, 0);
+    border-radius: 1em;
+    padding: 2em;
+    line-height: 2em;
+}
+
+.card-img {
+    height: 10em;
+    border-radius: 0.4em;
+    width: 10em;
+}
+
+.text-card {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btnInfo {
+    margin-top: 12px;
+    background: black;
+    cursor: pointer;
+    border: none;
+    padding: 1em 2em;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+
+.btnInfo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        #c0ce2a, #000000,
+        #c0ce2a, #000000
+    );
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+.btnInfo:hover {
+    z-index: 0;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
