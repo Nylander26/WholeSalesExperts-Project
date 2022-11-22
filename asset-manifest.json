@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/WholeSalesExperts-Project/static/css/main.4ef39e7a.css",
+    "main.js": "/WholeSalesExperts-Project/static/js/main.8f08f39c.js",
+    "static/media/grinder 2-1.png": "/WholeSalesExperts-Project/static/media/grinder 2-1.cbf94efe36183880705a.png",
+    "static/media/grinder.png": "/WholeSalesExperts-Project/static/media/grinder.f3addb349ef5bf101705.png",
+    "index.html": "/WholeSalesExperts-Project/index.html",
+    "main.4ef39e7a.css.map": "/WholeSalesExperts-Project/static/css/main.4ef39e7a.css.map",
+    "main.8f08f39c.js.map": "/WholeSalesExperts-Project/static/js/main.8f08f39c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ef39e7a.css",
+    "static/js/main.8f08f39c.js"
+  ]
+}
