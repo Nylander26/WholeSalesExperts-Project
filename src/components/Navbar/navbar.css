@@ -25,10 +25,11 @@ body {
     background-color: #c0ce2a;
     overflow-x: hidden;
     transition: 0.5s;
+    border-radius: 0em 0em 2em;
 }
 
 .opennav {
-    height: 30%;
+    height: 35%;
     width: 14em;
     position: fixed;
     z-index: 1;
