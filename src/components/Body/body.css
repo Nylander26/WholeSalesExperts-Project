@@ -1,15 +1,10 @@
-.logo{
-    width: 24em;
-    height: 22em;
-    position: absolute;
-    top: 0;
-    left: 9%;
-}
-
 .image-slider {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 36%;
+    top: 40%;
 }
 
 .cards-container {

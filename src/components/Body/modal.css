@@ -1,42 +1,94 @@
 .modal {
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    transition: var(--transition);
-  }
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 8em;
+  /* Location of the box */
+  left: 15%;
+  top: 5%;
+  width: 70%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: hidden;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  transition: var(--transition);
+}
 
 .modal-close {
-    display: none;
+  display: none;
 }
-  
-  /* Modal Content */
-  .modal-content {
-    background-color: #b6c417;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    border-radius: 1em;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #000000;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+
+/* Modal Content */
+.modal-content {
+  background-color: #b6c417e9;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 1em;
+  border: 20px solid rgb(0, 0, 0);
+  animation: border-pulsate 3s infinite;
+  border-radius: 2em;
+}
+
+/* The Close Button */
+.close {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.product-img {
+  width: 25%;
+  padding: 1em;
+  border-radius: 2em;
+  object-fit:cover
+}
+
+.product-title,
+.product-description,
+.product-price {
+  color: #000000;
+  font-size: 1.2em;
+  width: 50%;
+  line-height: 2em;
+  text-align: center;
+}
+
+.product-price {
+  font-size: 2em;
+}
+
+.modal-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 1em;
+}
+
+@keyframes border-pulsate {
+  0%   { border-color: #72901a; }
+  50%  { border-color: #00ffff00; }
+  100% { border-color: #72901a; }
+}
