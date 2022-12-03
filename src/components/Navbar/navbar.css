@@ -29,8 +29,8 @@ body {
 }
 
 .opennav {
-    height: 35%;
-    width: 14em;
+    height: 45%;
+    width: 30em;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -43,7 +43,7 @@ body {
     border-radius: 0em 0em 2em;
 }
 
-.opennav a {
+.opennav a, small {
     padding: 0.5em 0.5em 0.5em 2.5em;
     text-decoration: none;
     font-size: 25px;
@@ -54,6 +54,10 @@ body {
 }
 
 .closenav button, a {
+    display: none;
+}
+
+.closenav small {
     display: none;
 }
 

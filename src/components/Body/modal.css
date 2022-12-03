@@ -1,3 +1,7 @@
+:root {
+  transition: var(--transition);
+}
+
 .modal {
   position: fixed;
   /* Stay in place */
